@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Uzumaki Informatika News - Prestasi & Inovasi Teknologi</title>
+    
+    <!-- Font Awesome 6 (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins + Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div id="preloader">
+    <div class="spinner">
+        <div class="cube1"></div>
+        <div class="cube2"></div>
+        <div class="cube3"></div>
+        <div class="cube4"></div>
+    </div>
+    <p>🌀 UZUMAKI INFORMATIKA</p>
+</div>
+
+<!-- ===== NAVIGATION BAR ===== -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-icon">🌀</span>
+                <span class="logo-text">Uzu<span>In</span></span>
+            </a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="berita.html">Berita</a></li>
+                <li><a href="prestasi.html">Prestasi</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+        
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== SEARCH MODAL ===== -->
+<div class="search-modal" id="searchModal">
+    <div class="search-modal-content">
+        <button class="close-search" id="closeSearch"><i class="fas fa-times"></i></button>
+        <h2>Cari Berita & Prestasi</h2>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Ketik kata kunci...">
+            <button id="searchSubmit"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="search-tags">
+            <span>Populer:</span>
+            <a href="#">AI</a>
+            <a href="#">Cybersecurity</a>
+            <a href="#">Robotik</a>
+            <a href="#">Hackathon</a>
+            <a href="#">Startup</a>
+        </div>
+    </div>
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <span class="hero-badge">🏆 PRESTASI INFORMATIKA 2026</span>
+            <h1 class="hero-title">Generasi Muda <span class="gradient-text">Teknologi</span> Indonesia Mendunia</h1>
+            <p class="hero-subtitle">Menampilkan 100+ prestasi gemilang anak bangsa di kancah internasional. Dari juara hackathon, lomba robotik, hingga inovasi AI.</p>
+            <div class="hero-buttons">
+                <a href="prestasi.html" class="btn btn-primary">Lihat Prestasi <i class="fas fa-arrow-right"></i></a>
+                <a href="berita.html" class="btn btn-outline">Jelajahi Berita <i class="fas fa-newspaper"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Prestasi</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">75+</span>
+                    <span class="stat-label">Universitas</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">23</span>
+                    <span class="stat-label">Negara</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Pembaca</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <div class="hero-shape"></div>
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Informatics Achievement">
+            <div class="hero-card card-1">
+                <i class="fas fa-trophy"></i>
+                <div>
+                    <h4>Juara 1 ICPC</h4>
+                    <p>Tim UI - 2026</p>
+                </div>
+            </div>
+            <div class="hero-card card-2">
+                <i class="fas fa-robot"></i>
+                <div>
+                    <h4>Best Robot</h4>
+                    <p>ITB - 2026</p>
+                </div>
+            </div>
+            <div class="hero-card card-3">
+                <i class="fas fa-shield-haltered"></i>
+                <div>
+                    <h4>Cyber Jawara</h4>
+                    <p>UGM - 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== BERITA TERKINI SECTION ===== -->
+<section class="section latest-news">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <span class="section-badge">🔥 UPDATE TERBARU</span>
+                <h2 class="section-title">Berita <span class="gradient-text">Informatika</span> Terkini</h2>
+                <p class="section-subtitle">Perkembangan teknologi dan prestasi terbaru dari anak bangsa</p>
+            </div>
+            <a href="berita.html" class="btn btn-link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="news-grid">
+            <!-- News Card 1 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="news-img">
+                    <img src="https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="AI Research">
+                    <span class="news-category">AI</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar"></i> 12 Feb 2026</span>
+                        <span><i class="far fa-user"></i> Tim Riset</span>
+                    </div>
+                    <h3 class="news-title">Tim ITB Raih Juara 1 International AI Competition di Jepang</h3>
+                    <p class="news-excerpt">Mengalahkan 50 tim dari 25 negara dengan inovasi AI untuk deteksi dini bencana alam.</p>
+                    <a href="artikel.html?id=1" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- News Card 2 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="news-img">
+                    <img src="https://images.unsplash.com/photo-1562813733-b31f71025d54?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cybersecurity">
+                    <span class="news-category">Cybersecurity</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar"></i> 10 Feb 2026</span>
+                        <span><i class="far fa-user"></i> DefendID</span>
+                    </div>
+                    <h3 class="news-title">Tim UGM Juara Umum ASEAN Cyber Shield 2026</h3>
+                    <p class="news-excerpt">Berhasil menemukan 27 celah keamanan kritis dalam waktu 48 jam, mengalahkan tim dari Singapura dan Malaysia.</p>
+                    <a href="artikel.html?id=2" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- News Card 3 -->
+            <div class="news-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="news-img">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Robotics">
+                    <span class="news-category">Robotik</span>
+                </div>
+                <div class="news-content">
+                    <div class="news-meta">
+                        <span><i class="far fa-calendar"></i> 8 Feb 2026</span>
+                        <span><i class="far fa-user"></i> Robotic Team</span>
+                    </div>
+                    <h3 class="news-title">Robot Buatan ITS Borong 3 Penghargaan di World Robotic Summit</h3>
+                    <p class="news-excerpt">Robot humanoid bernama "Garuda-Bot" berhasil menjadi yang tercepat dalam kategori disaster response.</p>
+                    <a href="artikel.html?id=3" class="read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PRESTASI UNGGULAN SECTION ===== -->
+<section class="section achievements">
+    <div class="container">
+        <div class="section-header centered">
+            <span class="section-badge">🏅 PRESTASI INTERNASIONAL</span>
+            <h2 class="section-title">Pencapaian <span class="gradient-text">Gemilang</span> 2026</h2>
+            <p class="section-subtitle">Deretan prestasi membanggakan dari talenta digital Indonesia</p>
+        </div>
+        
+        <div class="achievement-tabs">
+            <button class="tab-btn active" data-tab="all">Semua</button>
+            <button class="tab-btn" data-tab="hackathon">Hackathon</button>
+            <button class="tab-btn" data-tab="cp">CP</button>
+            <button class="tab-btn" data-tab="robotics">Robotik</button>
+            <button class="tab-btn" data-tab="research">Penelitian</button>
+        </div>
+        
+        <div class="achievement-grid">
+            <!-- Achievement 1 -->
+            <div class="achievement-card" data-category="cp" data-aos="zoom-in" data-aos-delay="100">
+                <div class="achievement-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank gold">Juara 1</span>
+                    <h3>ICPC Asia Regional Contest</h3>
+                    <p>Universitas Indonesia</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> Tokyo, Jepang</span>
+                        <span><i class="far fa-calendar"></i> Jan 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement 2 -->
+            <div class="achievement-card" data-category="hackathon" data-aos="zoom-in" data-aos-delay="200">
+                <div class="achievement-icon">
+                    <i class="fas fa-shield-haltered"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank gold">Juara 1</span>
+                    <h3>ASEAN Cyber Shield</h3>
+                    <p>Universitas Gadjah Mada</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> Singapore</span>
+                        <span><i class="far fa-calendar"></i> Feb 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement 3 -->
+            <div class="achievement-card" data-category="robotics" data-aos="zoom-in" data-aos-delay="300">
+                <div class="achievement-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank silver">Juara 2</span>
+                    <h3>World Robotic Summit</h3>
+                    <p>Institut Teknologi Sepuluh Nopember</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> Seoul, Korea</span>
+                        <span><i class="far fa-calendar"></i> Feb 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement 4 -->
+            <div class="achievement-card" data-category="research" data-aos="zoom-in" data-aos-delay="400">
+                <div class="achievement-icon">
+                    <i class="fas fa-flask"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank bronze">Juara 3</span>
+                    <h3>International Conference on AI</h3>
+                    <p>Institut Teknologi Bandung</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> London, UK</span>
+                        <span><i class="far fa-calendar"></i> Mar 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement 5 -->
+            <div class="achievement-card" data-category="cp" data-aos="zoom-in" data-aos-delay="500">
+                <div class="achievement-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank gold">Juara 1</span>
+                    <h3>IOI 2026</h3>
+                    <p>Tim Olimpiade Indonesia</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> Beijing, China</span>
+                        <span><i class="far fa-calendar"></i> Jul 2026</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement 6 -->
+            <div class="achievement-card" data-category="hackathon" data-aos="zoom-in" data-aos-delay="600">
+                <div class="achievement-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="achievement-content">
+                    <span class="achievement-rank silver">Juara 2</span>
+                    <h3>Google Solution Challenge</h3>
+                    <p>BINUS University</p>
+                    <div class="achievement-meta">
+                        <span><i class="fas fa-map-pin"></i> San Francisco, US</span>
+                        <span><i class="far fa-calendar"></i> Apr 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-footer">
+            <a href="prestasi.html" class="btn btn-primary">Lihat Semua Prestasi <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STATISTIK SECTION ===== -->
+<section class="section stats-section">
+    <div class="container">
+        <div class="stats-wrapper">
+            <div class="stat-card-large" data-aos="fade-up">
+                <i class="fas fa-trophy"></i>
+                <h3 class="stat-num">150+</h3>
+                <p>Prestasi Internasional</p>
+            </div>
+            <div class="stat-card-large" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3 class="stat-num">75+</h3>
+                <p>Universitas & Institusi</p>
+            </div>
+            <div class="stat-card-large" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-globe-asia"></i>
+                <h3 class="stat-num">23</h3>
+                <p>Negara Tujuan</p>
+            </div>
+            <div class="stat-card-large" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-bolt"></i>
+                <h3 class="stat-num">$2.5M</h3>
+                <p>Total Pendanaan Startup</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROFIL TOKOH SECTION ===== -->
+<section class="section profiles">
+    <div class="container">
+        <div class="section-header">
+            <div>
+                <span class="section-badge">🌟 TOKOH INFORMATIKA</span>
+                <h2 class="section-title">Pahlawan <span class="gradient-text">Digital</span> Indonesia</h2>
+                <p class="section-subtitle">Mereka yang menginspirasi generasi muda teknologi</p>
+            </div>
+            <a href="about.html" class="btn btn-link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="profile-slider">
+            <div class="swiper profileSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Profile 1 -->
+                    <div class="swiper-slide">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Budi">
+                            </div>
+                            <h3>Dr. Budi Santoso, M.T.</h3>
+                            <p>Peneliti AI - ITB</p>
+                            <p class="profile-achievement">Pemenang ACM Prize in Computing 2026</p>
+                            <div class="profile-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile 2 -->
+                    <div class="swiper-slide">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Sari">
+                            </div>
+                            <h3>Prof. Sari Wulandari</h3>
+                            <p>Ahli Cybersecurity - UGM</p>
+                            <p class="profile-achievement">ASEAN Women in Tech Award 2026</p>
+                            <div class="profile-social">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Profile 3 -->
+                    <div class="swiper-slide">
+                        <div class="profile-card">
+                            <div class="profile-img">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Andi">
+                            </div>
+                            <h3>Andi Pratama</h3>
+                            <p>Founder - Edutech Startup</p>
+                            <p class="profile-achievement">Forbes 30 Under 30 Asia 2026<
